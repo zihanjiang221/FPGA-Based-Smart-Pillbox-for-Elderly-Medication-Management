@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tp_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="38300000001fs"></ZoomEndTime>
+      <Cursor1Time time="23400000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="62"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="68" />
+   <wvobject fp_name="/top_tp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/taken" type="logic">
+      <obj_property name="ElementShortName">taken</obj_property>
+      <obj_property name="ObjectShortName">taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/medicine_time" type="array">
+      <obj_property name="ElementShortName">medicine_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">medicine_time[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/time_now" type="array">
+      <obj_property name="ElementShortName">time_now[15:0]</obj_property>
+      <obj_property name="ObjectShortName">time_now[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/its_time" type="logic">
+      <obj_property name="ElementShortName">its_time</obj_property>
+      <obj_property name="ObjectShortName">its_time</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/buzzer" type="logic">
+      <obj_property name="ElementShortName">buzzer</obj_property>
+      <obj_property name="ObjectShortName">buzzer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/counter" type="array">
+      <obj_property name="ElementShortName">counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/alarm" type="logic">
+      <obj_property name="ElementShortName">alarm</obj_property>
+      <obj_property name="ObjectShortName">alarm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/hour_now" type="array">
+      <obj_property name="ElementShortName">hour_now[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_now[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/min_now" type="array">
+      <obj_property name="ElementShortName">min_now[7:0]</obj_property>
+      <obj_property name="ObjectShortName">min_now[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/count_reg" type="array">
+      <obj_property name="ElementShortName">count_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/hour/decimal" type="array">
+      <obj_property name="ElementShortName">decimal[5:0]</obj_property>
+      <obj_property name="ObjectShortName">decimal[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/hour/tens" type="array">
+      <obj_property name="ElementShortName">tens[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tens[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/hour/ones" type="array">
+      <obj_property name="ElementShortName">ones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/hour/temp_decimal" type="array">
+      <obj_property name="ElementShortName">temp_decimal[7:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_decimal[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/binaryInput" type="array">
+      <obj_property name="ElementShortName">binaryInput[15:0]</obj_property>
+      <obj_property name="ObjectShortName">binaryInput[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/min_now_2" type="array">
+      <obj_property name="ElementShortName">min_now_2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">min_now_2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/hour_now_2" type="array">
+      <obj_property name="ElementShortName">hour_now_2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_now_2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/min_now" type="array">
+      <obj_property name="ElementShortName">min_now[5:0]</obj_property>
+      <obj_property name="ObjectShortName">min_now[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/hour_now" type="array">
+      <obj_property name="ElementShortName">hour_now[5:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_now[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/clk_1s" type="logic">
+      <obj_property name="ElementShortName">clk_1s</obj_property>
+      <obj_property name="ObjectShortName">clk_1s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/clk_1min" type="logic">
+      <obj_property name="ElementShortName">clk_1min</obj_property>
+      <obj_property name="ObjectShortName">clk_1min</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/clk_1hour" type="logic">
+      <obj_property name="ElementShortName">clk_1hour</obj_property>
+      <obj_property name="ObjectShortName">clk_1hour</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/count_1" type="array">
+      <obj_property name="ElementShortName">count_1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">count_1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/count_2" type="array">
+      <obj_property name="ElementShortName">count_2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">count_2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/hour_first" type="array">
+      <obj_property name="ElementShortName">hour_first[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_first[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/hour_second" type="array">
+      <obj_property name="ElementShortName">hour_second[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_second[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/min_first" type="array">
+      <obj_property name="ElementShortName">min_first[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_first[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c2/min_second" type="array">
+      <obj_property name="ElementShortName">min_second[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_second[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/its_time" type="logic">
+      <obj_property name="ElementShortName">its_time</obj_property>
+      <obj_property name="ObjectShortName">its_time</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/taken" type="logic">
+      <obj_property name="ElementShortName">taken</obj_property>
+      <obj_property name="ObjectShortName">taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/buzzer" type="logic">
+      <obj_property name="ElementShortName">buzzer</obj_property>
+      <obj_property name="ObjectShortName">buzzer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/alarm" type="logic">
+      <obj_property name="ElementShortName">alarm</obj_property>
+      <obj_property name="ObjectShortName">alarm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/count_reg" type="array">
+      <obj_property name="ElementShortName">count_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/countmux" type="logic">
+      <obj_property name="ElementShortName">countmux</obj_property>
+      <obj_property name="ObjectShortName">countmux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/countload" type="logic">
+      <obj_property name="ElementShortName">countload</obj_property>
+      <obj_property name="ObjectShortName">countload</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/countmux" type="logic">
+      <obj_property name="ElementShortName">countmux</obj_property>
+      <obj_property name="ObjectShortName">countmux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/countload" type="logic">
+      <obj_property name="ElementShortName">countload</obj_property>
+      <obj_property name="ObjectShortName">countload</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/alarm" type="logic">
+      <obj_property name="ElementShortName">alarm</obj_property>
+      <obj_property name="ObjectShortName">alarm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/pre_out" type="array">
+      <obj_property name="ElementShortName">pre_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/count_reg" type="array">
+      <obj_property name="ElementShortName">count_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d1/count" type="array">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/its_time" type="logic">
+      <obj_property name="ElementShortName">its_time</obj_property>
+      <obj_property name="ObjectShortName">its_time</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/taken" type="logic">
+      <obj_property name="ElementShortName">taken</obj_property>
+      <obj_property name="ObjectShortName">taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/countmux" type="logic">
+      <obj_property name="ElementShortName">countmux</obj_property>
+      <obj_property name="ObjectShortName">countmux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/countload" type="logic">
+      <obj_property name="ElementShortName">countload</obj_property>
+      <obj_property name="ObjectShortName">countload</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/buzzer" type="logic">
+      <obj_property name="ElementShortName">buzzer</obj_property>
+      <obj_property name="ObjectShortName">buzzer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/clk_1s" type="logic">
+      <obj_property name="ElementShortName">clk_1s</obj_property>
+      <obj_property name="ObjectShortName">clk_1s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/clk_1min" type="logic">
+      <obj_property name="ElementShortName">clk_1min</obj_property>
+      <obj_property name="ObjectShortName">clk_1min</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/clk_1s_d" type="logic">
+      <obj_property name="ElementShortName">clk_1s_d</obj_property>
+      <obj_property name="ObjectShortName">clk_1s_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/clk_1s_pos" type="logic">
+      <obj_property name="ElementShortName">clk_1s_pos</obj_property>
+      <obj_property name="ObjectShortName">clk_1s_pos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/S0" type="array">
+      <obj_property name="ElementShortName">S0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/S1" type="array">
+      <obj_property name="ElementShortName">S1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/S2" type="array">
+      <obj_property name="ElementShortName">S2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/S3" type="array">
+      <obj_property name="ElementShortName">S3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tp/tb/c3/d2/S4" type="array">
+      <obj_property name="ElementShortName">S4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S4[31:0]</obj_property>
+   </wvobject>
+</wave_config>

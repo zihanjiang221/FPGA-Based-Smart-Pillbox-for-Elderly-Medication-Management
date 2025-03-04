@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jun  2 23:07:48 2024
+# Process ID: 19068
+# Current directory: C:/digital_system_study/pill_box/pill_box.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5732 C:\digital_system_study\pill_box\pill_box.sim\sim_1\behav\xsim\VGA_tb_behav.wdb
+# Log file: C:/digital_system_study/pill_box/pill_box.sim/sim_1/behav/xsim/vivado.log
+# Journal file: C:/digital_system_study/pill_box/pill_box.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\digital_system_study\pill_box\pill_box.sim\sim_1\behav\xsim\VGA_tb_behav.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/digital_system_study/Vivado/2017.4/data/ip'.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  2 23:08:35 2024...

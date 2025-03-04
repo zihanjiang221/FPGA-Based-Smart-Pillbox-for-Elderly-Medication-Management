@@ -1,0 +1,960 @@
+
+*** Running vivado
+    with args -log SPI_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source SPI_top.tcl -notrace
+Command: synth_design -top SPI_top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19196 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 346.523 ; gain = 103.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SPI_top' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:21]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LOAD bound to: 4'b0001 
+	Parameter WAIT bound to: 4'b0010 
+	Parameter ENDING bound to: 4'b0011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:77]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:336]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:336]
+INFO: [Synth 8-638] synthesizing module 'SPI_transmitter' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:171]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter START bound to: 4'b0001 
+	Parameter INST_OUT bound to: 4'b0010 
+	Parameter ADDR_OUT bound to: 4'b0011 
+	Parameter WRITE_DATA bound to: 4'b0100 
+	Parameter READ_DATA bound to: 4'b0101 
+	Parameter ENDING bound to: 4'b0110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:248]
+INFO: [Synth 8-256] done synthesizing module 'SPI_transmitter' (2#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:171]
+INFO: [Synth 8-638] synthesizing module 'mean_filter' [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:1]
+	Parameter FILTER_CNT bound to: 32 - type: integer 
+	Parameter BIT_CNT bound to: 5 - type: integer 
+	Parameter WAITING bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'mean_ram' [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:109]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-5788] Register ram_reg[1] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[2] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[3] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[4] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[5] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[6] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[7] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[8] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[9] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[10] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[11] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[12] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[13] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[14] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[15] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[16] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[17] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[18] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[19] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[20] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[21] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[22] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[23] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[24] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[25] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[26] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[27] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[28] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[29] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[30] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+WARNING: [Synth 8-5788] Register ram_reg[31] in module mean_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:125]
+INFO: [Synth 8-256] done synthesizing module 'mean_ram' (3#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:109]
+INFO: [Synth 8-256] done synthesizing module 'mean_filter' (4#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:1]
+WARNING: [Synth 8-689] width (39) of port connection 'data_in' does not match port width (8) of module 'mean_filter' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:163]
+WARNING: [Synth 8-350] instance 'mean_x' of module 'mean_filter' requires 6 connections, but only 5 given [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:163]
+WARNING: [Synth 8-689] width (39) of port connection 'data_in' does not match port width (8) of module 'mean_filter' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:164]
+WARNING: [Synth 8-350] instance 'mean_y' of module 'mean_filter' requires 6 connections, but only 5 given [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:164]
+WARNING: [Synth 8-689] width (39) of port connection 'data_in' does not match port width (8) of module 'mean_filter' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:165]
+WARNING: [Synth 8-350] instance 'mean_z' of module 'mean_filter' requires 6 connections, but only 5 given [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:165]
+INFO: [Synth 8-638] synthesizing module 'alarm_top' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:23]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:102]
+INFO: [Synth 8-256] done synthesizing module 'control' (5#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:51]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:129]
+	Parameter thr1 bound to: 12288 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:152]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register' (6#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:152]
+WARNING: [Synth 8-350] instance 'register_SMV' of module 'register' requires 6 connections, but only 5 given [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:142]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:167]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (7#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:167]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (8#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:129]
+WARNING: [Synth 8-350] instance 'dp' of module 'datapath' requires 9 connections, but only 8 given [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:47]
+INFO: [Synth 8-256] done synthesizing module 'alarm_top' (9#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:23]
+WARNING: [Synth 8-6014] Unused sequential element slow_clk_d_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:143]
+WARNING: [Synth 8-5788] Register next_state_reg in module SPI_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:76]
+WARNING: [Synth 8-5788] Register data_reg in module SPI_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:85]
+INFO: [Synth 8-256] done synthesizing module 'SPI_top' (10#1) [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:21]
+WARNING: [Synth 8-3331] design datapath has unconnected port clk_1s
+WARNING: [Synth 8-3331] design mean_ram has unconnected port rd_addr[7]
+WARNING: [Synth 8-3331] design mean_ram has unconnected port rd_addr[6]
+WARNING: [Synth 8-3331] design mean_ram has unconnected port rd_addr[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 398.762 ; gain = 155.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin register_SMV:clear to constant 0 [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:142]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 398.762 ; gain = 155.516
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT1'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_INT1'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_INT1'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT1'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[6]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[0]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[1]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[2]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[3]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[4]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[5]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[7]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[0]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[1]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[2]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[3]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[4]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[5]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[6]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_light[7]'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test3'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test3'. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/digital_system_study/SPI/SPI.srcs/constrs_1/imports/new/adxl_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SPI_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SPI_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 732.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 732.594 ; gain = 489.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 732.594 ; gain = 489.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 732.594 ; gain = 489.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "slow_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SPI_transmitter'
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/SPI_transmitter.v:251]
+INFO: [Synth 8-5544] ROM "ready_posedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_posedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_posedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_posedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_posedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SCLK_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ram_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'mean_vld_reg' into 'rd_domain_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:96]
+WARNING: [Synth 8-6014] Unused sequential element mean_vld_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:96]
+INFO: [Synth 8-5546] ROM "rd_domain" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+INFO: [Synth 8-5544] ROM "SMV_load" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMV_load" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMV_load" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SMV_load" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_1s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_data_x" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "din_valid_posedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_data_y" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_data_z" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                   START |                              001 |                             0001
+                INST_OUT |                              010 |                             0010
+                ADDR_OUT |                              011 |                             0011
+               READ_DATA |                              100 |                             0101
+              WRITE_DATA |                              101 |                             0100
+                  ENDING |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SPI_transmitter'
+WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:104]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                              000
+                 iSTATE0 |                               01 |                              001
+                 iSTATE1 |                               10 |                              010
+                 iSTATE2 |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_n_state_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'SMV_load_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'M_load_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'M_clear_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/imports/new/fallen_detection.v:80]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 732.594 ; gain = 489.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   4 Input     13 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	                8 Bit    Registers := 120   
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 18    
+	   7 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 137   
+	   7 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SPI_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 8     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SPI_transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   7 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   7 Input      1 Bit        Muxes := 13    
+Module mean_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 33    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module mean_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module alarm_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'mean_y/wr_en_reg' into 'mean_x/wr_en_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:34]
+INFO: [Synth 8-4471] merging register 'mean_z/wr_en_reg' into 'mean_x/wr_en_reg' [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:34]
+WARNING: [Synth 8-6014] Unused sequential element mean_x/u_mean_ram_inst/rd_vld_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:137]
+WARNING: [Synth 8-6014] Unused sequential element mean_y/u_mean_ram_inst/rd_vld_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:137]
+WARNING: [Synth 8-6014] Unused sequential element mean_y/wr_en_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:34]
+WARNING: [Synth 8-6014] Unused sequential element mean_z/u_mean_ram_inst/rd_vld_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:137]
+WARNING: [Synth 8-6014] Unused sequential element mean_z/wr_en_reg was removed.  [C:/digital_system_study/SPI/SPI.srcs/sources_1/new/filter.v:34]
+INFO: [Synth 8-5546] ROM "clk_5000/slow_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/u_mean_ram_inst/ram_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_x/rd_domain" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mean_y/u_mean_ram_inst/ram_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "nolabel_line166/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line166/clk_1s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'data_reg[17]' (FDE) to 'data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'data_reg[2]' (FDE) to 'data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'data_reg[18]' (FDE) to 'data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'data_reg[12]' (FDE) to 'data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'data_reg[20]' (FDE) to 'data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'data_reg[21]' (FDE) to 'data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'clk_counter_reg[10]' (FDCE) to 'clk_counter_reg[15]'
+INFO: [Synth 8-3886] merging instance 'clk_counter_reg[11]' (FDCE) to 'clk_counter_reg[15]'
+INFO: [Synth 8-3886] merging instance 'clk_counter_reg[12]' (FDCE) to 'clk_counter_reg[15]'
+INFO: [Synth 8-3886] merging instance 'clk_counter_reg[13]' (FDCE) to 'clk_counter_reg[15]'
+INFO: [Synth 8-3886] merging instance 'clk_counter_reg[15]' (FDCE) to 'clk_counter_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\clk_counter_reg[14] )
+INFO: [Synth 8-3886] merging instance 'next_state_reg[2]' (FDE) to 'next_state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\next_state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'mean_y/wr_data_reg[7]' (FDC) to 'mean_z/wr_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mean_z/wr_data_reg[7]' (FDC) to 'mean_x/wr_data_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/wr_data_reg[7] )
+INFO: [Synth 8-3886] merging instance 'data_reg[14]' (FDE) to 'data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'data_reg[22]' (FDE) to 'data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'state_reg[2]' (FDC) to 'spi_transmitter/SCLK_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'state_reg[3]' (FDC) to 'spi_transmitter/SCLK_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'spi_transmitter/SCLK_count_reg[4]' (FDC) to 'spi_transmitter/SCLK_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'spi_transmitter/SCLK_count_reg[5]' (FDC) to 'spi_transmitter/SCLK_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'spi_transmitter/SCLK_count_reg[7]' (FDC) to 'spi_transmitter/SCLK_count_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_transmitter/SCLK_count_reg[6] )
+INFO: [Synth 8-3886] merging instance 'data_reg[15]' (FDE) to 'data_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\data_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[31][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[29][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[28][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[26][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[23][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[22][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[21][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[20][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[15][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[14][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[13][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[12][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[11][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[10][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[9][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[8][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[7][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_y/u_mean_ram_inst/ram_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[31][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[29][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[28][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[26][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[23][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[22][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[21][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[20][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[15][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[14][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[13][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[12][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[11][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[10][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[9][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[8][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[7][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_z/u_mean_ram_inst/ram_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[31][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[29][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[28][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[26][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[23][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[22][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[21][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[20][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[15][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[14][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[13][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[12][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[11][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[10][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[9][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[8][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[7][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mean_x/u_mean_ram_inst/ram_reg[1][7] )
+WARNING: [Synth 8-3332] Sequential element (nolabel_line166/ctrl/FSM_sequential_n_state_reg[1]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line166/ctrl/FSM_sequential_n_state_reg[0]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line166/ctrl/SMV_load_reg) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line166/ctrl/M_load_reg) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line166/ctrl/M_clear_reg) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (next_state_reg[3]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (data_reg[23]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[0][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[1][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[2][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[3][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[4][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[5][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[6][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[7][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[8][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[9][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[10][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[11][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[12][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[13][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[14][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[15][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[16][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[17][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[18][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[19][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[20][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[21][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[22][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[23][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[24][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[25][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[26][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[27][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[28][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[29][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[30][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/ram_reg[31][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_x/u_mean_ram_inst/rd_data_reg[7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[0][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[1][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[2][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[3][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[4][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[5][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[6][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[7][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[8][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[9][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[10][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[11][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[12][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[13][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[14][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[15][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[16][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[17][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[18][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[19][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[20][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[21][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[22][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[23][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[24][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[25][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[26][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[27][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[28][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[29][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[30][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/ram_reg[31][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_z/u_mean_ram_inst/rd_data_reg[7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[0][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[1][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[2][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[3][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[4][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[5][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[6][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[7][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[8][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[9][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[10][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[11][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[12][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[13][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[14][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[15][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[16][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[17][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[18][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[19][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[20][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[21][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[22][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[23][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[24][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[25][7]) is unused and will be removed from module SPI_top.
+WARNING: [Synth 8-3332] Sequential element (mean_y/u_mean_ram_inst/ram_reg[26][7]) is unused and will be removed from module SPI_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\spi_transmitter/MOSI_count_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 732.594 ; gain = 489.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 736.711 ; gain = 493.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 738.367 ; gain = 495.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    62|
+|3     |LUT1   |     4|
+|4     |LUT2   |   165|
+|5     |LUT3   |    89|
+|6     |LUT4   |   124|
+|7     |LUT5   |   140|
+|8     |LUT6   |   388|
+|9     |MUXF7  |    84|
+|10    |FDCE   |   287|
+|11    |FDPE   |     1|
+|12    |FDRE   |   723|
+|13    |IBUF   |     4|
+|14    |OBUF   |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |  2080|
+|2     |  clk_5000          |clock_divider   |    33|
+|3     |  mean_x            |mean_filter     |   560|
+|4     |    u_mean_ram_inst |mean_ram_3      |   384|
+|5     |  mean_y            |mean_filter_0   |   571|
+|6     |    u_mean_ram_inst |mean_ram_2      |   377|
+|7     |  mean_z            |mean_filter_1   |   569|
+|8     |    u_mean_ram_inst |mean_ram        |   377|
+|9     |  nolabel_line166   |alarm_top       |   127|
+|10    |    ctrl            |control         |    14|
+|11    |    dp              |datapath        |    31|
+|12    |      adder_M       |adder           |     3|
+|13    |      register_SMV  |register        |    28|
+|14    |  spi_transmitter   |SPI_transmitter |    95|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 141 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 774.449 ; gain = 197.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 774.449 ; gain = 531.203
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+297 Infos, 182 Warnings, 22 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 774.449 ; gain = 543.828
+INFO: [Common 17-1381] The checkpoint 'C:/digital_system_study/SPI/SPI.runs/synth_1/SPI_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SPI_top_utilization_synth.rpt -pb SPI_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 774.449 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  9 16:21:29 2024...

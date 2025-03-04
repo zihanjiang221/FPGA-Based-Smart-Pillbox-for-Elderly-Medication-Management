@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 20 14:23:25 2024
+# Process ID: 364
+# Current directory: C:/digital_system_study/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17556 C:\digital_system_study\VGA\VGA.xpr
+# Log file: C:/digital_system_study/VGA/vivado.log
+# Journal file: C:/digital_system_study/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/digital_system_study/VGA/VGA.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/digital_system_study/VGA/VGA.srcs/sources_1/new/VGA.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/digital_system_study/VGA/VGA.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/digital_system_study/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 771.594 ; gain = 24.855
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 20 14:24:28 2024...
+19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/digital_system_study/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 772.762 ; gain = 22.195
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 20 14:25:16 2024...

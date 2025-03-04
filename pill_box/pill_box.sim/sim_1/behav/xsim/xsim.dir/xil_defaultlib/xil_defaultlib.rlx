@@ -1,0 +1,7 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/digital_system_study/pill_box/pill_box.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/digital_system_study/pill_box/pill_box.srcs/sim_1/new/VGA_tb.v,1716976845,verilog,,,,VGA_tb,,,,,,,,
+C:/digital_system_study/pill_box/pill_box.srcs/sources_1/new/VGA.v,1716977135,verilog,,C:/digital_system_study/pill_box/pill_box.srcs/sim_1/new/VGA_tb.v,,CLK_PLL;VGA;vga_control;vga_display,,,,,,,,
